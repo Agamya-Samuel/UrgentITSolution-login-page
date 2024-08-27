@@ -2,11 +2,6 @@ import { Button, Card, Checkbox, Label, TextInput } from 'flowbite-react';
 import { useEffect, useState } from 'react';
 
 function LoginCard() {
-	useEffect(() => {
-		// clear the sessionToken if it exists
-		localStorage.removeItem('sessionToken');
-	}, []);
-
 	const [formData, setFromData] = useState({
 		email: '',
 		password: '',
